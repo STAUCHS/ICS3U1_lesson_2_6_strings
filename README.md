@@ -1,29 +1,3 @@
-
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 0.921 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β31
-* Tue Oct 12 2021 02:54:58 GMT-0700 (PDT)
-* Source doc: 2.8 Strings
-* This is a partial selection. Check to make sure intra-doc links work.
-* Tables are currently converted to HTML tables.
------>
-
-
-
 # 2.6 Strings
 
 Java has many objects that come with every java compiler.  We have see the `Math` object, which allows us to manipulate numbers.  Let's introduce `String`, which allows us to manipulate text.
@@ -124,7 +98,7 @@ Strings can tell you how long they are by using the length method
 Example
 
 
-```
+```java
 String name = readLine("Enter your name:  ")
 int nameLength = name.length();    // get the number of characters in the name
 System.out.println("The name " + name + " has " + nameLength + " characters in it.")
@@ -139,7 +113,7 @@ There are two indexOf methods, the first is a method where the string will find 
 Example
 
 
-```
+```java
 String example = "TESTING";
 int result = example.indexOf( "S" );// returns 2
 System.out.println(result);
@@ -197,7 +171,7 @@ System.out.println(result);
 The other indexOf method takes an extra parameter that tells it where to start looking AFTER.
 
 
-```
+```java
 int result = example.indexOf( "T", 1 );// returns 3, first T after index 1
 int result = example.indexOf( "E", 2 );// returns -1, no E after index 2
 int result = example.indexOf( "N", 3 );// returns 5, first N after index 3
@@ -214,7 +188,7 @@ The first version we’ll look at takes one parameter, where to start the substr
 Example
 
 
-```
+```java
 String example = "substring method";
 System.out.println(example.substring(10));  //prints "method"
 System.out.println(example.substring(3));   //prints "string method"
@@ -280,7 +254,7 @@ The second version of substring takes two parameters, pay CAREFUL attention!
 * The place to **start**
 * One space past the **end**
 
-    ```
+    ```java
     String example = "substring method";
 
     System.out.println(example.substring(0,3));//prints "sub"
@@ -304,12 +278,12 @@ The substring method can be tricky, especially when there are two parameters
 Recall that when comparing values of primitive types int, double, char we could use == to check if two values are equal.  However, with Strings, we can't count on == to work for us.  We must use the .equals() method.
 
 
-```
+```java
 String firstWord = "hello";
 String secondWord = "jello";
 
-if (firstWord.equals(secondWord)){
-    System.out.println("These are equal");
+if (firstWord.equals(secondWord)) {
+  System.out.println("These are equal");
 }
 ```
 
@@ -353,8 +327,9 @@ This method returns an integer, such that of firstString and secondString contai
 
 
 
-```
+```java
 firstString = "abc";
 secondString = "bbc";
 
 System.out.println(firstString.compareTo(secondString));  //outputs a negative number
+```

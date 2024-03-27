@@ -6,13 +6,13 @@ class Program1 extends ConsoleProgram {
   */
   
   public void run() {
-    /*
+    
     // .length() example
     String strName = readLine("Enter your name:  ");
     int nameLength = strName.length();    // get the number of characters in the name
     System.out.println("The name " + strName + " has " + nameLength + " characters in it.");
     
-
+    /*
     String example = "TESTING";
     int result = example.indexOf( "S" );// returns 2
     System.out.println(result);
@@ -25,8 +25,7 @@ class Program1 extends ConsoleProgram {
 
     result = example.indexOf( "Q" );// returns -1 if not found
     System.out.println(result);
-    */
-
+    
     String example = "substring method";
     System.out.println(example.substring(10));  //prints "method"
     System.out.println(example.substring(3));   //prints "string method"
@@ -36,7 +35,7 @@ class Program1 extends ConsoleProgram {
     System.out.println("The length of " +  example2 + " is " + example2.length());
     System.out.println(example2.substring(5));
     System.out.println(example2.substring(7, 9));
-    
+    */
     
   }
 }
